@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/sibelius/Dropbox/development/AndroidProjects/TreatmentAdherence/TreatmentAdherence/build/pre-dexed/debug/classes-5173cdef12ce8eead61210b40c3e54bbf6f86a84.jar"
+        jar="/Users/sibelius/Dropbox/development/AndroidProjects/TreatmentAdherence/build/exploded-aar/TreatmentAdherence/triggerManager/unspecified/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3438134651a0f68fbe3e47f196905ee09094e64b"/>
+    <item
+        dex="/Users/sibelius/Dropbox/development/AndroidProjects/TreatmentAdherence/TreatmentAdherence/build/pre-dexed/debug/android-support-v4-2d2af01ff7ba4398ed33c8a0af897d86ef3c469c.jar"
+        jar="/Users/sibelius/Dropbox/development/AndroidProjects/TreatmentAdherence/build/exploded-aar/TreatmentAdherence/sensorDataManager/unspecified/libs/android-support-v4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="bd6479f5dd592790607e0504e66e0f31c2b4d308"/>
+    <item
+        dex="/Users/sibelius/Dropbox/development/AndroidProjects/TreatmentAdherence/TreatmentAdherence/build/pre-dexed/debug/classes-41cf03477a6eb904922a2f9a5077ef5ca42e1dbc.jar"
+        jar="/Users/sibelius/Dropbox/development/AndroidProjects/TreatmentAdherence/build/exploded-aar/TreatmentAdherence/sensorManager/unspecified/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="77b594c66c5a86db1dd90cd7f6236bf771a656d1"/>
+    <item
+        dex="/Users/sibelius/Dropbox/development/AndroidProjects/TreatmentAdherence/TreatmentAdherence/build/pre-dexed/debug/httpmime-4.1.2-abf9a7e5ed234b55c2fbc1c51f5575283567dffd.jar"
+        jar="/Users/sibelius/Dropbox/development/AndroidProjects/TreatmentAdherence/build/exploded-aar/TreatmentAdherence/sensorDataManager/unspecified/libs/httpmime-4.1.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ed8b5ee0167cb27dea55851259eb34b609f31df0"/>
+    <item
+        dex="/Users/sibelius/Dropbox/development/AndroidProjects/TreatmentAdherence/TreatmentAdherence/build/pre-dexed/debug/classes-731dcb5091a660bc7a87e49dd24d1ed7f3985032.jar"
+        jar="/Users/sibelius/Dropbox/development/AndroidProjects/TreatmentAdherence/build/exploded-aar/TreatmentAdherence/sensorDataManager/unspecified/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6f57f56e9514f04c9231e935a49fb17ecdce6766"/>
+    <item
+        dex="/Users/sibelius/Dropbox/development/AndroidProjects/TreatmentAdherence/TreatmentAdherence/build/pre-dexed/debug/classes-1ef236de9e13753fe728a471ba5256ea957386a4.jar"
+        jar="/Users/sibelius/Dropbox/development/AndroidProjects/TreatmentAdherence/build/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+    <item
+        dex="/Users/sibelius/Dropbox/development/AndroidProjects/TreatmentAdherence/TreatmentAdherence/build/pre-dexed/debug/support-v4-19.1.0-8c8aaae57cb79279f5981bfd72f82e1aae20b917.jar"
+        jar="/Users/sibelius/android-sdks/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+
+</pre-dex-items>
