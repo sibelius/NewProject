@@ -5,9 +5,26 @@
     tools:context="${relativePackage}.${activityClass}">
 
     <TextView
-        android:text="@string/hello_world"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/activity"
+        android:id="@+id/activity"
+        android:textSize="20sp"
+        android:gravity="center"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_activity"
+        android:layout_toRightOf="@+id/activity"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_activity"
+        android:onClick="switchActivity"
+        android:text="@string/button_startActivity"
+        android:id="@+id/activity_button"
+        android:enabled="false"/>
 
     <Button
         android:id="@+id/sensing_button"
@@ -16,5 +33,4 @@
         android:layout_alignParentBottom="true"
         android:onClick="switchSensing"
         android:text="@string/button_startSensing" />
-
 </RelativeLayout>

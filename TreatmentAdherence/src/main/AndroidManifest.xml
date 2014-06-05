@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.arizona.adherence" >
+    package="edu.arizona.adherence"
+    android:installLocation="preferExternal" >
 
     <uses-sdk
         android:minSdkVersion="10"
@@ -53,9 +54,12 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <!-- Declared Above <uses-permission android:name="android.permission.READ_SMS" /> -->
 
+    <!-- Initialize the service with Android -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/treatment"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -73,6 +77,12 @@
             android:enabled="true"
             android:exported="true" >
         </service>
+
+        <receiver android:name=".MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
