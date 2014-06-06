@@ -16,8 +16,8 @@ import com.ubhave.sensormanager.ESSensorManager;
  */
 public class SensingService extends Service {
     private static final int ONGOING_NOTIFICATION_ID = 192;
-    //private IBinder mBinder;
-    //private boolean mAllowRebind;
+    private IBinder mBinder;
+    private boolean mAllowRebind;
     private ESSensorManager sensorManager;
     private SensingListener sensor;
 

@@ -22,8 +22,6 @@ IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 package com.ubhave.triggermanager.triggers.sensor;
 
-import java.util.Random;
-
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
@@ -46,6 +44,8 @@ import com.ubhave.triggermanager.config.TriggerConfig;
 import com.ubhave.triggermanager.config.TriggerManagerConstants;
 import com.ubhave.triggermanager.triggers.Trigger;
 import com.ubhave.triggermanager.triggers.TriggerUtils;
+
+import java.util.Random;
 
 public class ImmediateSensorTrigger extends Trigger implements SensorDataListener
 {
@@ -224,6 +224,5 @@ public class ImmediateSensorTrigger extends Trigger implements SensorDataListene
 	protected void startAlarm() throws TriggerException
 	{
 		// TODO Auto-generated method stub
-		
 	}
 }

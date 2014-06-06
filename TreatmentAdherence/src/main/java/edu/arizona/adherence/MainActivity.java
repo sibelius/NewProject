@@ -2,6 +2,8 @@ package edu.arizona.adherence;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.ActivityManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -65,6 +67,21 @@ public class MainActivity extends Activity {
         //sensor = new SensingListener(this, dataLogger);
         //Intent startServiceIntent = new Intent(this, SensingService.class);
         //startService(startServiceIntent);
+
+        if (isMyServiceRunning(SensingService.class)) {
+            isSensing = true;
+            switchButtonText();
+        }
+    }
+
+    private boolean isMyServiceRunning(Class<?> serviceClass) {
+        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
@@ -93,9 +110,11 @@ public class MainActivity extends Activity {
         if(isPerforming) {
             activityButton.setText(R.string.button_stopActivity);
             sensingButton.setEnabled(false);
+            mActivities.setEnabled(false);
         } else {
             activityButton.setText(R.string.button_startActivity);
             sensingButton.setEnabled(true);
+            mActivities.setEnabled(true);
         }
     }
 
@@ -153,7 +172,6 @@ public class MainActivity extends Activity {
     //
     public void switchActivity(final View view) {
         if (!isPerforming) {
-            // TODO Save the start time of activity
             JSONObject json = new JSONObject();
             try {
                 json.put(TAG_ACTIVITY, mActivities.getSelectedItem().toString());
@@ -168,10 +186,10 @@ public class MainActivity extends Activity {
 
             activityButton.setText(R.string.button_stopActivity);
             sensingButton.setEnabled(false);
+            mActivities.setEnabled(false);
             Toast toast = Toast.makeText(this, "Activity Started", Toast.LENGTH_SHORT);
             toast.show();
         } else {
-            // TODO Save the stop time of activity
             JSONObject json = new JSONObject();
             try {
                 json.put(TAG_ACTIVITY, mActivities.getSelectedItem().toString());
@@ -186,6 +204,7 @@ public class MainActivity extends Activity {
 
             activityButton.setText(R.string.button_startActivity);
             sensingButton.setEnabled(true);
+            mActivities.setEnabled(true);
             Toast toast = Toast.makeText(this, "Activity Stopped", Toast.LENGTH_SHORT);
             toast.show();
         }
