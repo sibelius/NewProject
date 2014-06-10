@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <!-- From: file:/Users/sibelius/Dropbox/development/AndroidProjects/TreatmentAdherence/sensorManager/src/main/res/values/styles.xml -->
-    <eat-comment />
-
-    <style name="AppTheme" parent="android:Theme.Light" />
-
-</resources>

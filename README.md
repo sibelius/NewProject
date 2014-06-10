@@ -1,4 +1,0 @@
-NewProject
-==========
-
-test project repository
